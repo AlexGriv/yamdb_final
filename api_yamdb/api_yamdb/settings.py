@@ -86,6 +86,7 @@ DATABASES = {
     }
 }
 
+
 AUTH_USER_MODEL = 'reviews.User'
 
 AUTHENTICATION_BACKENDS = (
