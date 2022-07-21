@@ -1,25 +1,18 @@
 import uuid
 
 from django.conf import settings
-from django.contrib.auth import get_user_model, authenticate
+from django.contrib.auth import authenticate, get_user_model
 from django.contrib.auth.models import update_last_login
 from django.core.mail import send_mail
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django.utils.translation import gettext_lazy as _
-from rest_framework import serializers, exceptions
+from rest_framework import exceptions, serializers
 from rest_framework.exceptions import ValidationError
 from rest_framework_simplejwt.settings import api_settings
 from rest_framework_simplejwt.tokens import RefreshToken
-
-from reviews.models import (
-    Comment,
-    Review,
-    Title,
-    USER_ROLE_CHOICES,
-    Categories,
-    Genres,
-)
+from reviews.models import (USER_ROLE_CHOICES, Categories, Comment, Genres,
+                            Review, Title)
 
 User = get_user_model()
 
