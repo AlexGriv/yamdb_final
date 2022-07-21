@@ -7,6 +7,7 @@ from django.core.mail import send_mail
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django.utils.translation import gettext_lazy as _
+
 from rest_framework import exceptions, serializers
 from rest_framework.exceptions import ValidationError
 from rest_framework_simplejwt.settings import api_settings
