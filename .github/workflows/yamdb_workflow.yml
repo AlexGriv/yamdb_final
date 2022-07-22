@@ -55,7 +55,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           push: true
-          context: ./api_yamdb/.
+          context: ./api_yamdb/
           tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:latest
   deploy:
     runs-on: ubuntu-latest
