@@ -8,7 +8,6 @@ services:
     env_file:
       - ./.env
   web:
-    build: .
     image: kefear/yamdb_final:latest
     restart: always
     volumes:
