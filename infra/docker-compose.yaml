@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: kefear/yamdb_final:latest
+    image: ../kefear/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/app/static/
