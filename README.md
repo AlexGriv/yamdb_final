@@ -1,5 +1,15 @@
 [![CI Actions Status](https://github.com/AlexGriv/yamdb_final/workflows/CI/badge.svg)](https://github.com/AlexGriv/yamdb_final/actions)
 # Групповой проект Api_YaMDb запакованный в docker'е.
+Проверка:
+```
+зайти на http://localhost/admin/
+```
+Документация по проекту доступна по адресу 'http://51.250.22.224/redoc/'
+```
+Пример POST-запроса:
+
+POST .../api/v1/titles/
+
 
 ## Описание
 Проект YaMDb собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы», «Музыка». 
@@ -39,7 +49,7 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```
 зайти на http://localhost/admin/
 ```
-Документация по проекту доступна по адресу 'http://127.0.0.1/redoc/'
+Документация по проекту доступна по адресу 'http://51.250.22.224/redoc/'
 ```
 Шаблон наполнения env-файла:
 ```
