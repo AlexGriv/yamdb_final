@@ -71,7 +71,7 @@ ALLOWED_HOSTS=example.com
 
 ## Пример POST-запроса:
 
-POST .../api/v1/titles/
+GET .../api/v1/titles/
 ```
 {
     "name": "string",
