@@ -2,13 +2,13 @@
 # Групповой проект Api_YaMDb запакованный в docker'е.
 Проверка:
 ```
-зайти на http://localhost/admin/
+Зайти на http://localhost/admin/
 ```
 Документация по проекту доступна по адресу 'http://51.250.22.224/redoc/'
 ```
-Пример POST-запроса:
+Пример GET-запроса:
 
-POST .../api/v1/titles/
+GET http://51.250.22.224/api/v1/titles/
 
 
 ## Описание
@@ -71,7 +71,7 @@ ALLOWED_HOSTS=example.com
 
 ## Пример POST-запроса:
 
-GET .../api/v1/titles/
+GET http://51.250.22.224/api/v1/titles/
 ```
 {
     "name": "string",
